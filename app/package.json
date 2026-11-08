@@ -1,0 +1,66 @@
+{
+  "name": "sysadmin-toolkit",
+  "productName": "SysAdminToolkit",
+  "version": "0.3.0",
+  "description": "SysAdmin Toolkit — портативный набор сисадмина (by TheReaLexito)",
+  "main": "main.js",
+  "author": "TheReaLexito (Aleksey Zhurlov)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron . --dev",
+    "dist": "electron-builder --win portable --x64",
+    "predist": "node scripts/stamp.js"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "ru.thereallexito.sysadmintoolkit",
+    "productName": "SysAdminToolkit",
+    "artifactName": "SysAdminToolkit.exe",
+    "asar": false,
+    "compression": "maximum",
+    "electronLanguages": [
+      "ru",
+      "en-US"
+    ],
+    "directories": {
+      "output": "../_dev/dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "lib/**/*",
+      "renderer/**/*",
+      "data/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "bin",
+        "to": "bin"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "requestedExecutionLevel": "requireAdministrator",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "SysAdminToolkit.exe",
+      "splashImage": "build/splash.bmp",
+      "requestExecutionLevel": "admin"
+    }
+  }
+}

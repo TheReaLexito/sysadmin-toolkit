@@ -1,0 +1,861 @@
+{
+ "groups": [
+  "Установка на чистый ПК",
+  "Диагностика железа",
+  "Диски и образы",
+  "Восстановление данных",
+  "Пароли и ключи",
+  "Удалённый доступ",
+  "Сеть",
+  "Файлы и система",
+  "Антивирус",
+  "Прочее",
+  "Только с флешки (WinPE)"
+ ],
+ "catalog": [
+  [
+   "winrar-",
+   "WinRAR — архиватор (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "googlechromestandaloneenterprise",
+   "Google Chrome — браузер (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "firefox",
+   "Firefox — браузер (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "7z2",
+   "7-Zip — бесплатный архиватор (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "vc_redist.x64",
+   "Visual C++ 2015-2022 x64 (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "vc_redist.x86",
+   "Visual C++ 2015-2022 x86 (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "ndp481",
+   ".NET Framework 4.8.1 (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "dxwebsetup",
+   "DirectX — через интернет (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "sumatrapdf",
+   "Sumatra PDF — просмотр PDF (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "vlc-",
+   "VLC — видеоплеер (установить)",
+   "Установка на чистый ПК"
+  ],
+  [
+   "hwinfo",
+   "HWiNFO — железо и датчики",
+   "Диагностика железа"
+  ],
+  [
+   "aida64",
+   "AIDA64 — полная информация о ПК",
+   "Диагностика железа"
+  ],
+  [
+   "cpuz",
+   "CPU-Z — процессор, память, плата",
+   "Диагностика железа"
+  ],
+  [
+   "performancetest",
+   "PerformanceTest — бенчмарк ПК",
+   "Диагностика железа"
+  ],
+  [
+   "crystaldiskinfo",
+   "CrystalDiskInfo — SMART дисков",
+   "Диагностика железа"
+  ],
+  [
+   "crystaldiskmark",
+   "CrystalDiskMark — скорость дисков",
+   "Диагностика железа"
+  ],
+  [
+   "harddisksentinel",
+   "HDD Sentinel — здоровье дисков",
+   "Диагностика железа"
+  ],
+  [
+   "hddscan",
+   "HDDScan — тест поверхности диска",
+   "Диагностика железа"
+  ],
+  [
+   "hdtune",
+   "HD Tune — тест диска",
+   "Диагностика железа"
+  ],
+  [
+   "victoria",
+   "Victoria — диагностика HDD",
+   "Диагностика железа"
+  ],
+  [
+   "burnintest",
+   "BurnInTest — стресс-тест",
+   "Диагностика железа"
+  ],
+  [
+   "linpackxtreme",
+   "Linpack Xtreme — нагрузка CPU",
+   "Диагностика железа"
+  ],
+  [
+   "linx",
+   "LinX — нагрузка CPU",
+   "Диагностика железа"
+  ],
+  [
+   "occt",
+   "OCCT — стресс-тест, температуры",
+   "Диагностика железа"
+  ],
+  [
+   "checkdevice",
+   "CheckDevice — проверка флешек",
+   "Диагностика железа"
+  ],
+  [
+   "ismylcdok",
+   "IsMyLcdOK — тест матрицы",
+   "Диагностика железа"
+  ],
+  [
+   "monitortest",
+   "MonitorTest — тест монитора",
+   "Диагностика железа"
+  ],
+  [
+   "keyboardtestutility",
+   "Тест клавиатуры",
+   "Диагностика железа"
+  ],
+  [
+   "soundcheck",
+   "SoundCheck — тест звука",
+   "Диагностика железа"
+  ],
+  [
+   "rweverything",
+   "RW-Everything — регистры железа",
+   "Диагностика железа"
+  ],
+  [
+   "rtester",
+   "R-Tester — тест накопителей",
+   "Диагностика железа"
+  ],
+  [
+   "nirlauncher",
+   "NirLauncher — набор утилит NirSoft",
+   "Диагностика железа"
+  ],
+  [
+   "webcamrecorder",
+   "Webcam Recorder — проверка камеры",
+   "Диагностика железа"
+  ],
+  [
+   "acronisshellextension",
+   "Acronis — оболочка для .tib",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "atih",
+   "Acronis True Image",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "atih_2014",
+   "Acronis True Image 2014 (v17)",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "atih2016",
+   "Acronis True Image 2016 (v19)",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "atih2019",
+   "Acronis True Image 2019 (v23)",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "acpho",
+   "Acronis Cyber Protect Home Office (v27, новее 2019)",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "add_",
+   "Acronis Disk Director",
+   "Диски и образы"
+  ],
+  [
+   "aomeiddm",
+   "AOMEI Dynamic Disk Manager",
+   "Диски и образы"
+  ],
+  [
+   "backupper",
+   "AOMEI Backupper",
+   "Диски и образы"
+  ],
+  [
+   "abr_",
+   "Acronis Backup",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "epm",
+   "EaseUS Partition Master",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "etb",
+   "EaseUS Todo Backup",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "edc",
+   "EaseUS Disk Copy",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "esr",
+   "ESR",
+   "Диски и образы"
+  ],
+  [
+   "macriumreflect",
+   "Macrium Reflect — образы и клонирование",
+   "Диски и образы"
+  ],
+  [
+   "r-driveimage",
+   "R-Drive Image",
+   "Диски и образы"
+  ],
+  [
+   "ghost",
+   "Norton Ghost",
+   "Диски и образы"
+  ],
+  [
+   "imageforwindows",
+   "Image for Windows",
+   "Диски и образы"
+  ],
+  [
+   "shadowprotectpe",
+   "ShadowProtect",
+   "Диски и образы"
+  ],
+  [
+   "veritassystemrecovery",
+   "Veritas System Recovery",
+   "Диски и образы"
+  ],
+  [
+   "disk2vhd",
+   "Disk2vhd — диск в VHD без перезагрузки",
+   "Диски и образы"
+  ],
+  [
+   "snapshot",
+   "Drive Snapshot",
+   "Диски и образы"
+  ],
+  [
+   "diskcopy",
+   "DiskCopy — клонирование",
+   "Диски и образы"
+  ],
+  [
+   "diskimage",
+   "Disk Image",
+   "Диски и образы"
+  ],
+  [
+   "niubipartitioneditor",
+   "NIUBI Partition Editor",
+   "Диски и образы"
+  ],
+  [
+   "paragonlinux",
+   "Paragon Linux FS",
+   "Диски и образы"
+  ],
+  [
+   "paragon",
+   "Paragon (разделы и образы)",
+   "Диски и образы"
+  ],
+  [
+   "partitionassistant",
+   "AOMEI Partition Assistant",
+   "Диски и образы"
+  ],
+  [
+   "partitionguru",
+   "PartitionGuru",
+   "Диски и образы"
+  ],
+  [
+   "partitionwizard",
+   "MiniTool Partition Wizard",
+   "Диски и образы"
+  ],
+  [
+   "apfs",
+   "APFS для Windows",
+   "Диски и образы"
+  ],
+  [
+   "hfs",
+   "Paragon HFS+ — диски Mac",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "easybcd",
+   "EasyBCD — загрузчик",
+   "Диски и образы"
+  ],
+  [
+   "easyuefi",
+   "EasyUEFI — UEFI-записи",
+   "Диски и образы"
+  ],
+  [
+   "winntsetup",
+   "WinNTSetup — установка Windows",
+   "Диски и образы"
+  ],
+  [
+   "dismplus",
+   "Dism++ — обслуживание Windows",
+   "Диски и образы"
+  ],
+  [
+   "dartex",
+   "MS DaRT — восстановление Windows",
+   "Файлы и система"
+  ],
+  [
+   "doubledriver",
+   "DoubleDriver — копия драйверов",
+   "Диски и образы"
+  ],
+  [
+   "hddlowlevelformattool",
+   "HDD Low Level Format",
+   "Диски и образы"
+  ],
+  [
+   "killdisk",
+   "KillDisk — затирание диска",
+   "Диски и образы"
+  ],
+  [
+   "booticex64",
+   "BOOTICE x64 — загрузчик и MBR",
+   "Диски и образы"
+  ],
+  [
+   "booticex86",
+   "BOOTICE x86 — загрузчик и MBR",
+   "Диски и образы"
+  ],
+  [
+   "niubipartitioneditor",
+   "NIUBI Partition Editor",
+   "Диски и образы"
+  ],
+  [
+   "drevitalize",
+   "Disk Revitalizer",
+   "Диски и образы"
+  ],
+  [
+   "defraggler",
+   "Defraggler — дефрагментация",
+   "Диски и образы"
+  ],
+  [
+   "oodefrag",
+   "O&O Defrag",
+   "Диски и образы"
+  ],
+  [
+   "srt",
+   "SRT",
+   "Диски и образы"
+  ],
+  [
+   "activepartitionmanager",
+   "Active@ Partition Manager",
+   "Диски и образы"
+  ],
+  [
+   "activediskeditor",
+   "Active@ Disk Editor",
+   "Диски и образы"
+  ],
+  [
+   "getdataback",
+   "GetDataBack — восстановление данных",
+   "Восстановление данных"
+  ],
+  [
+   "easeusdatarecovery",
+   "EaseUS Data Recovery",
+   "Восстановление данных"
+  ],
+  [
+   "filerecovery",
+   "File Recovery",
+   "Восстановление данных"
+  ],
+  [
+   "testdisk",
+   "TestDisk / PhotoRec",
+   "Восстановление данных"
+  ],
+  [
+   "rsaver",
+   "R-Saver",
+   "Восстановление данных"
+  ],
+  [
+   "r-studio",
+   "R-Studio",
+   "Восстановление данных"
+  ],
+  [
+   "raidreconstructor",
+   "RAID Reconstructor",
+   "Восстановление данных"
+  ],
+  [
+   "pc3000",
+   "PC-3000",
+   "Восстановление данных"
+  ],
+  [
+   "winhex",
+   "WinHex — hex-редактор дисков",
+   "Восстановление данных"
+  ],
+  [
+   "cihexviewer",
+   "CI Hex Viewer",
+   "Восстановление данных"
+  ],
+  [
+   "activeundelete",
+   "Active@ UNDELETE",
+   "Восстановление данных"
+  ],
+  [
+   "partrecovery",
+   "Active@ Partition Recovery",
+   "Восстановление данных"
+  ],
+  [
+   "passwordreset",
+   "Сброс пароля Windows",
+   "Пароли и ключи"
+  ],
+  [
+   "resetwindowspassword",
+   "Reset Windows Password",
+   "Пароли и ключи"
+  ],
+  [
+   "pcunlocker",
+   "PCUnlocker",
+   "Пароли и ключи"
+  ],
+  [
+   "windowsloginunlocker",
+   "Windows Login Unlocker",
+   "Пароли и ключи"
+  ],
+  [
+   "oemkey",
+   "OemKey — OEM-ключ из BIOS",
+   "Пароли и ключи"
+  ],
+  [
+   "showkeyplus",
+   "ShowKeyPlus — ключ Windows",
+   "Пароли и ключи"
+  ],
+  [
+   "recoverkeys",
+   "Recover Keys — ключи программ",
+   "Пароли и ключи"
+  ],
+  [
+   "anydesk",
+   "AnyDesk",
+   "Удалённый доступ"
+  ],
+  [
+   "team_viewer",
+   "TeamViewer",
+   "Удалённый доступ"
+  ],
+  [
+   "ammyyadmin",
+   "Ammyy Admin",
+   "Удалённый доступ"
+  ],
+  [
+   "aeroadmin",
+   "AeroAdmin",
+   "Удалённый доступ"
+  ],
+  [
+   "supremo",
+   "Supremo",
+   "Удалённый доступ"
+  ],
+  [
+   "radminserver",
+   "Radmin Server",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "radminvpn",
+   "Radmin VPN",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "tightvnc",
+   "TightVNC",
+   "Удалённый доступ"
+  ],
+  [
+   "ultravnc",
+   "UltraVNC",
+   "Удалённый доступ"
+  ],
+  [
+   "rdp",
+   "RDP — удалённый рабочий стол",
+   "Удалённый доступ"
+  ],
+  [
+   "putty",
+   "PuTTY — SSH/Telnet",
+   "Удалённый доступ"
+  ],
+  [
+   "openvpn",
+   "OpenVPN",
+   "Удалённый доступ"
+  ],
+  [
+   "ipscanner",
+   "Advanced IP Scanner",
+   "Сеть"
+  ],
+  [
+   "filezilla",
+   "FileZilla — FTP",
+   "Сеть"
+  ],
+  [
+   "ftpuse",
+   "FtpUse — FTP как диск",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "aria2c",
+   "aria2 — загрузчик",
+   "Сеть"
+  ],
+  [
+   "downloadmaster",
+   "Download Master",
+   "Сеть"
+  ],
+  [
+   "farmanager",
+   "Far Manager",
+   "Файлы и система"
+  ],
+  [
+   "totalcommander",
+   "Total Commander",
+   "Файлы и система"
+  ],
+  [
+   "files_",
+   "Files — файловый менеджер",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "everything",
+   "Everything — мгновенный поиск",
+   "Файлы и система"
+  ],
+  [
+   "teracopy",
+   "TeraCopy",
+   "Файлы и система"
+  ],
+  [
+   "hardlinkshellext",
+   "Link Shell Extension",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "windirstat",
+   "WinDirStat — что занимает диск",
+   "Файлы и система"
+  ],
+  [
+   "treesize",
+   "TreeSize",
+   "Файлы и система"
+  ],
+  [
+   "usbsafelyremove",
+   "USB Safely Remove",
+   "Файлы и система"
+  ],
+  [
+   "cmosde-animator",
+   "CMOS De-Animator",
+   "Файлы и система"
+  ],
+  [
+   "captainnemo",
+   "Captain Nemo — доступ к разделам",
+   "Файлы и система"
+  ],
+  [
+   "snippingtool",
+   "Ножницы",
+   "Файлы и система"
+  ],
+  [
+   "faststonecapture",
+   "FastStone Capture",
+   "Файлы и система"
+  ],
+  [
+   "moo0audiorecorder",
+   "Moo0 Audio Recorder",
+   "Файлы и система"
+  ],
+  [
+   "stduviewer",
+   "STDU Viewer",
+   "Файлы и система"
+  ],
+  [
+   "run_dr.web",
+   "Dr.Web CureIt (запуск)",
+   "Антивирус"
+  ],
+  [
+   "dr.web",
+   "Dr.Web CureIt",
+   "Антивирус"
+  ],
+  [
+   "run_kaspersky",
+   "Kaspersky Virus Removal (запуск)",
+   "Антивирус"
+  ],
+  [
+   "kaspersky",
+   "Kaspersky Virus Removal Tool",
+   "Антивирус"
+  ],
+  [
+   "runsmartfix",
+   "SmartFix (запуск)",
+   "Антивирус"
+  ],
+  [
+   "smartfix",
+   "SmartFix",
+   "Антивирус"
+  ],
+  [
+   "renegator",
+   "HDD Regenerator",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "office2007",
+   "Office 2007",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "mpc-hc",
+   "MPC-HC — видеоплеер",
+   "Только с флешки (WinPE)"
+  ],
+  [
+   "poweriso",
+   "PowerISO",
+   "Прочее"
+  ],
+  [
+   "gburner",
+   "gBurner — запись дисков",
+   "Прочее"
+  ],
+  [
+   "skype",
+   "Skype",
+   "Прочее"
+  ],
+  [
+   "utorrent",
+   "uTorrent",
+   "Прочее"
+  ],
+  [
+   "opera",
+   "Opera",
+   "Прочее"
+  ],
+  [
+   "vmwaretools",
+   "VMware Tools",
+   "Прочее"
+  ]
+ ],
+ "apps": [
+  [
+   "SDIO",
+   "Snappy Driver Installer — драйверы",
+   "Установка на чистый ПК",
+   [
+    "SDIO_x64_R*.exe"
+   ],
+   [
+    "SDIO_R*.exe"
+   ]
+  ],
+  [
+   "Autoruns",
+   "Autoruns — всё, что запускается само",
+   "Файлы и система",
+   [
+    "Autoruns64.exe"
+   ],
+   [
+    "Autoruns.exe"
+   ]
+  ],
+  [
+   "ProcessExplorer",
+   "Process Explorer — продвинутый диспетчер задач",
+   "Файлы и система",
+   [
+    "procexp64.exe"
+   ],
+   [
+    "procexp.exe"
+   ]
+  ],
+  [
+   "TCPView",
+   "TCPView — кто куда подключается",
+   "Сеть",
+   [
+    "tcpview64.exe"
+   ],
+   [
+    "tcpview.exe"
+   ]
+  ],
+  [
+   "BlueScreenView",
+   "BlueScreenView — причины синих экранов",
+   "Диагностика железа",
+   [
+    "BlueScreenView.exe"
+   ],
+   [
+    "BlueScreenView.exe"
+   ]
+  ],
+  [
+   "AdwCleaner",
+   "AdwCleaner — рекламный мусор и тулбары",
+   "Антивирус",
+   [
+    "adwcleaner*.exe"
+   ],
+   [
+    "adwcleaner*.exe"
+   ]
+  ],
+  [
+   "Rufus",
+   "Rufus — загрузочная флешка",
+   "Диски и образы",
+   [
+    "rufus*.exe"
+   ],
+   [
+    "rufus*.exe"
+   ]
+  ],
+  [
+   "Ventoy",
+   "Ventoy — мультизагрузочная флешка",
+   "Диски и образы",
+   [
+    "*\\altexe\\Ventoy2Disk_X64.exe",
+    "*\\Ventoy2Disk.exe"
+   ],
+   [
+    "*\\Ventoy2Disk.exe"
+   ]
+  ],
+  [
+   "BCU",
+   "Bulk Crap Uninstaller — удаление программ пачкой",
+   "Файлы и система",
+   [
+    "BCUninstaller.exe",
+    "*\\BCUninstaller.exe"
+   ],
+   [
+    "BCUninstaller.exe",
+    "*\\BCUninstaller.exe"
+   ]
+  ]
+ ]
+}

@@ -1,0 +1,20 @@
+# зависимости и сборка
+node_modules/
+dist/
+_dev/
+app/data/build.json
+app/data/icons.json
+app/bin/*
+!app/bin/.gitkeep
+
+# данные пользователя и чужое ПО (программы из Tools не распространяются: авторские права)
+Tools/*
+!Tools/README.md
+WinPE_Strelec/
+Reports/
+settings.json
+tools.json
+
+# система
+Thumbs.db
+*.log

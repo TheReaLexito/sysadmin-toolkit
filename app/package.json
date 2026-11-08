@@ -1,7 +1,7 @@
 {
   "name": "sysadmin-toolkit",
   "productName": "SysAdminToolkit",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "SysAdmin Toolkit — портативный набор сисадмина (by TheReaLexito)",
   "main": "main.js",
   "author": "TheReaLexito (Aleksey Zhurlov)",

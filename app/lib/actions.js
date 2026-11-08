@@ -188,6 +188,25 @@ const HANDLERS = {
   clear_temp: () => clearTemp(),
 
   // ----- плюшки
+  winutil: () => {
+    launch.startLine('start "WinUtil" powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "irm christitus.com/win | iex"');
+    return { text: 'WinUtil запущен — утилита Chris Titus для настройки и оптимизации Windows.' };
+  },
+  winget_upgrade: () => {
+    launch.consoleCmd('winget upgrade --all --accept-source-agreements --accept-package-agreements', true);
+    return { text: 'Запущено обновление всех программ через winget.' };
+  },
+  telemetry_off: async () => {
+    await restorePoint();
+    for (const c of [
+      'reg add "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection" /v AllowTelemetry /t REG_DWORD /d 0 /f',
+      'sc config DiagTrack start= disabled',
+      'sc stop DiagTrack',
+      'sc config dmwappushservice start= disabled',
+      'sc stop dmwappushservice',
+    ]) await shell(c);
+    return { text: 'Телеметрия отключена: AllowTelemetry=0, DiagTrack и dmwappushservice остановлены.', change: 'Телеметрия Windows отключена' };
+  },
   photo_on: () => photo(true),
   photo_off: () => photo(false),
   ext_on: () => regTweak('reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v HideFileExt /t REG_DWORD /d 0 /f',
@@ -199,6 +218,27 @@ const HANDLERS = {
   power_max: () => regTweak('powercfg /setactive SCHEME_MIN', 'Схема питания: высокая производительность'),
   fastboot_off: () => regTweak('reg add "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Power" /v HiberbootEnabled /t REG_DWORD /d 0 /f',
     'Отключён быстрый запуск Windows'),
+  rdp_on: async () => {
+    await restorePoint();
+    const r = await shell('reg add "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f & netsh advfirewall firewall set rule group="remote desktop" new enable=yes');
+    if (r.code !== 0) return { error: 'Ошибка включения RDP: ' + r.out.trim() };
+    return { text: 'Remote Desktop (RDP) включён и разрешён в брандмауэре.', change: 'Включён RDP, разрешён в брандмауэре' };
+  },
+  hyperv_on: () => {
+    launch.consoleCmd('DISM /Online /Enable-Feature /FeatureName:Microsoft-Hyper-V /All /NoRestart', true);
+    return { text: 'Включение Hyper-V запущено — потребуется перезагрузка.' };
+  },
+  hyperv_off: () => {
+    launch.consoleCmd('DISM /Online /Disable-Feature /FeatureName:Microsoft-Hyper-V /NoRestart', true);
+    return { text: 'Отключение Hyper-V запущено — потребуется перезагрузка.' };
+  },
+  export_apps: async () => {
+    fs.mkdirSync(P.reportsDir, { recursive: true });
+    const out = path.join(P.reportsDir, 'apps_' + new Date().toISOString().replace(/[-:T]/g, '').slice(0, 14) + '.json');
+    const r = await exec('winget', ['export', '-o', out, '--accept-source-agreements'], { timeout: 60000 });
+    if (fs.existsSync(out)) { launch.startLine(`start "" "${P.reportsDir}"`); return { text: 'Список программ экспортирован: ' + out }; }
+    return { text: 'winget export: ' + r.out.trim().slice(0, 300) };
+  },
 
   autologon_on: async ({ domain, user, password }) => {
     if (!user) return { error: 'Укажите пользователя' };
@@ -218,6 +258,18 @@ const HANDLERS = {
   // ----- сеть
   ipconfig: async () => ({ text: await runOut('ipconfig', ['/all']) }),
   flushdns: async () => ({ text: await runOut('ipconfig', ['/flushdns']) }),
+  wifi_pass: async () => {
+    const r = await exec('netsh', ['wlan', 'show', 'profiles']);
+    const names = [...r.out.matchAll(/(?:All User Profile|Профиль всех пользователей)\s*:\s*(.+)/g)].map((m) => m[1].trim());
+    if (!names.length) return { text: 'Сохранённых WiFi-сетей не найдено.' };
+    const lines = [`Сохранённых сетей: ${names.length}\n`];
+    for (const name of names) {
+      const p = await exec('netsh', ['wlan', 'show', 'profile', name, 'key=clear']);
+      const pass = (/(?:Key Content|Содержимое ключа)\s*:\s*(.+)/.exec(p.out) || [])[1]?.trim();
+      lines.push(`${name}: ${pass || '(нет пароля или закрытая сеть)'}`);
+    }
+    return { text: lines.join('\n') };
+  },
   net_check: async () => {
     const ip = await localIp();
     const gw = ip.split('.').slice(0, 3).concat('1').join('.');

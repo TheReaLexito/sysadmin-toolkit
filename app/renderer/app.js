@@ -75,8 +75,27 @@
         { t: 'Очистить TEMP', d: 'Удаляет временные файлы пользователя и системы', i: 'trash', id: 'clear_temp', confirm: 'Удалить временные файлы из папок TEMP (пользовательской и системной)? Занятые файлы будут пропущены.' },
       ]],
       ['Быстрый доступ', QUICK.map(([t, target]) => ({ t, d: target, i: 'external', id: 'open', args: { target } }))],
+      ['Удалённый доступ (RDP)', [
+        { t: 'Включить Remote Desktop', d: 'Разрешить подключения по RDP и открыть порт в брандмауэре', i: 'monitor', k: 'primary', id: 'rdp_on', confirm: 'Включить Remote Desktop (RDP) и разрешить его в брандмауэре Windows? Будет создана точка восстановления.' },
+      ]],
+      ['Hyper-V', [
+        { t: 'Включить Hyper-V', d: 'DISM: установить компоненты Hyper-V (потребуется перезагрузка)', i: 'chip', k: 'primary', id: 'hyperv_on' },
+        { t: 'Отключить Hyper-V', d: 'DISM: удалить компоненты Hyper-V (потребуется перезагрузка)', i: 'chip', id: 'hyperv_off' },
+      ]],
+      ['Экспорт списка программ', [
+        { t: 'Экспортировать программы (winget)', d: 'Сохранить список установленных программ в JSON — для переустановки на новом ПК', i: 'save', id: 'export_apps' },
+      ]],
     ],
     tweaks: [
+      ['WinUtil — настройка Windows', [
+        { t: 'Открыть WinUtil', d: 'Chris Titus Tech WinUtil: оптимизация, установка программ, дебloating', i: 'tool', k: 'primary', id: 'winutil' },
+      ]],
+      ['Обновление программ', [
+        { t: 'Обновить все программы (winget)', d: 'winget upgrade --all: обновляет все установленные программы', i: 'refresh', k: 'green', id: 'winget_upgrade' },
+      ]],
+      ['Телеметрия Windows', [
+        { t: 'Отключить телеметрию', d: 'AllowTelemetry=0, остановить DiagTrack и dmwappushservice', i: 'shield', id: 'telemetry_off', confirm: 'Отключить телеметрию Windows? Будут остановлены DiagTrack и dmwappushservice, создана точка восстановления.' },
+      ]],
       ['Просмотр фотографий (классический)', [
         { t: 'Включить Photo Viewer', d: 'Вернуть старый просмотрщик фотографий Windows', i: 'image', k: 'green', id: 'photo_on' },
         { t: 'Выключить Photo Viewer', d: 'Убрать классический просмотрщик', i: 'image', id: 'photo_off' },
@@ -99,6 +118,9 @@
         { t: 'Пинг: шлюз, DNS, интернет', d: 'Быстро понять, где обрыв связи', i: 'wifi', k: 'primary', id: 'net_check', busy: 'Проверяю связь…' },
         { t: 'Сканировать подсеть', d: 'Найти живые устройства в локальной сети', i: 'search', id: 'net_scan', busy: 'Сканирую локальную сеть… это займёт около 10 секунд.' },
         { t: 'Сброс DNS-кэша', d: 'ipconfig /flushdns', i: 'refresh', id: 'flushdns' },
+      ]],
+      ['WiFi', [
+        { t: 'Пароли WiFi', d: 'Показать пароли всех сохранённых WiFi-сетей', i: 'wifi', id: 'wifi_pass', busy: 'Читаю профили WiFi…' },
       ]],
     ],
   };
